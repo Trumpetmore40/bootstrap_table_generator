@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fefefe;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 87em) {
+  .btn {
+    font-size: 0.8rem;
+    width: 10rem;
+  }
+  .variants-list {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 62em) {
+  .variants-list {
+    max-width: 15rem;
+    margin: 0 auto;
+  }
+  .btns-create {
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+}
